@@ -22,6 +22,10 @@ body {
     background-color: var(--primary-color);
 }
 
+p {
+    font-size: 20px;
+}
+
 header {
     color: var(--secondary-color);
     border-bottom: 2.5px solid var(--tertiary-color);
@@ -62,11 +66,39 @@ header {
 }
 
 .controls {
-    margin: 1rem;
+    margin: 1.5rem 1rem;
+    height: 30vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 
-.select {
-    border: 1px solid white;
+.prev-song,
+.next-song {
+    border: 1.5px solid var(--tertiary-color);
+    background-color: var(--primary-color);
+}
+
+#select-label {
+    font-size: 1.5rem;
+    margin-right: 0.5rem;
+    color: var(--tertiary-color);
+}
+
+.audio {
+    height: 27.5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+audio {
+    width: 50vw;
+}
+
+.song-name {
+    font-size: 1.5rem;
+    color: var(--tertiary-color);
 }
