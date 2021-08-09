@@ -25,23 +25,47 @@
             <h2 class="all"> ☰ </h2>
         </div>
     </header>
-    <section class="controls">
-        <div class="select select-indiv">
-            <p>Selector</p>
+    <section class="dropdown">
+        <div class="dropdown-item">
+            <p class="dropdown-item-name"> Settings </p>
+            <img src="settings-white.svg">
         </div>
-        <div class="select select-random">
-            <button class="random-music">Random Music</button>
+        <div class="dropdown-item">
+            <p class="dropdown-item-name"> Terms of Use </p>
+            <img src="chevron-right.svg">
         </div>
-        <div class="select select-choose">
-            <label for="music-list">Select a Song or Music</label>
-
-            <select name="music-list" id="select-a-song">
-                <option value="Vivaldi Spring"></option>
-                <option value="Vivaldi Summer"></option>
-                <option value="Vivaldi Fall"></option>
-                <option value="Vivaldi Winter"></option>
-            </select>
+        <div class="dropdown-item">
+            <p class="dropdown-item-name"> Privacy Policy </p>
+            <img src="chevron-right.svg">
         </div>
     </section>
+    <section class="controls">
+        <div class="select select-indiv">
+            <button class="prev-song"> <img src="chevron-left.svg"> </button>
+            <span class="song-title">Current Song</span>
+            <button class="next-song"> <img src="chevron-right.svg"> </button>
+        </div>
+        <div class="select select-random">
+            <button class="random-music">Random Selection</button>
+        </div>
+        <div class="select select-choose">
+            <form>
+                <label for="music-list" id="select-label">Play</label>
+
+                <select name="music-list" id="select-a-song">
+                    <option value="Vivaldi Spring">Vivaldi Spring</option>
+                    <option value="Vivaldi Summer">Vivaldi Summer</option>
+                    <option value="Vivaldi Fall">Vivaldi Fall</option>
+                    <option value="Vivaldi Winter">Vivaldi Winter</option>
+                </select>
+            </form>
+        </div>
+    </section>
+    <section class="audio">
+        <audio src="vivaldi-spring.mp3" controls></audio>
+        <p class="song-name">Vivaldi - Four Seasons - Spring</p>
+    </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
