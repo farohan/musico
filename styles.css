@@ -32,6 +32,21 @@ a {
     color: var(--secondary-color);
 }
 
+label {
+    color: var(--tertiary-color);
+    font-size: 1.75rem;
+}
+
+input {
+    padding: 5px 8px;
+    border: none;
+    border-radius: 7px;
+}
+
+input:focus {
+    outline: none;
+}
+
 header {
     color: var(--secondary-color);
     border-bottom: 2.5px solid var(--tertiary-color);
@@ -157,10 +172,49 @@ header {
 
 audio {
     height: 5rem;
-    width: 50vw;
+    min-width: 70vw;
+    max-width: 82.5vw;
 }
 
 .song-name {
     font-size: 1.5rem;
     color: var(--tertiary-color);
+}
+
+#form-title {
+    font-size: 3rem;
+    color: var(--tertiary-color);
+    text-align: right;
+}
+
+.form-push {
+    border: 1px solid white;
+    height: 75vh;
+    min-width: 40vw;
+    max-width: 50vw;
+}
+
+#music-name {
+    height: 4rem;
+    width: 50rem;
+    transition: border 0.3s;
+}
+
+#music-name:focus {
+    border: 5px solid var(--secondary-color);
+}
+
+#add-to-list {
+    height: 5rem;
+    width: 15rem;
+    background-color: var(--secondary-color);
+    color: black;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#add-to-list:hover {
+    transform: translate(5px, -5px);
 }
