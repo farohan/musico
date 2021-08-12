@@ -27,6 +27,11 @@ p {
     font-size: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: var(--secondary-color);
+}
+
 header {
     color: var(--secondary-color);
     border-bottom: 2.5px solid var(--tertiary-color);
@@ -47,6 +52,14 @@ header {
 
 .header:hover {
     background-color: var(--tertiary-color);
+}
+
+.header-brand {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .brand-logo {
