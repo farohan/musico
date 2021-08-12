@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="song, manager, music, list, organize">
+    <meta name="description" content="Manage your song and music collection here at MusiCo.">
+    <link rel="stylesheet" href="styles.css">
+    <title>Manage Your Songs - MusiCo.</title>
+</head>
+<body>
+    <header>
+        <a class="header" href="index.html">
+            <div class="header-brand">
+                <img class="brand brand-logo" src="https://i.pinimg.com/originals/e7/a2/14/e7a214ad811bddd8f78dd4272af04112.png" alt="soundwave logo">
+                <h1 class="brand brand-name">MusiCo.</h1>
+            </div>
+        </a>
+        <a class="header" href="index.html">
+            <div class="header-listen">
+                <h2 class="listen">Listen</h2>
+            </div>
+        </a>
+        <a class="header" href="manager.html">
+            <div class="header-music-manager">
+                <h2 class="manage-songs">Manage Songs</h2>
+            </div>
+        </a>
+        <div title="Click once to open. Double-click to close. Thank you." class="header header-all" onclick="openSideBar()" ondblclick="closeSideBar()">
+            <h2 class="all"> ☰ </h2>
+        </div>
+    </header>
+    <section id="sidebar">
+        <div class="side-item">
+            <p class="side-item-name"> Settings </p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-name"> Terms of Use </p>
+        </div>
+        <div class="side-item">
+            <p class="side-item-name"> Privacy Policy </p>
+        </div>
+    </section>
+    <section id="add-new">
+        <h2 id="form-title"> Add a New Song </h2>
+        <form action="https://formspree.io/f/mvodvpev" method="POST">
+            <div class="form-group">
+                <label for="music-name">Name of Song or Music (This will appear when you listen to the song): </label>
+                <input name="music-name" type="text">
+            </div>
+            <div class="form-group">
+                <input type="file" onchange="myFunction()" accept=".mp3">
+            </div>
+            <button type="submit"> + Add</button> 
+        </form>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+</html>
