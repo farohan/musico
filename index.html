@@ -11,17 +11,23 @@
 </head>
 <body>
     <header>
-        <div class="header header-brand">
-            <img class="brand brand-logo" src="https://i.pinimg.com/originals/e7/a2/14/e7a214ad811bddd8f78dd4272af04112.png" alt="soundwave logo">
-            <h1 class="brand brand-name">MusiCo.</h1>
-        </div>
-        <div class="header header-listen">
-            <h2 class="listen">Listen</h2>
-        </div>
-        <div class="header header-music-manager">
-            <h2 class="manage-songs">Manage Songs</h2>
-        </div>
-        <div title="Double click to open more options. Thank you." class="header header-all" ondblclick="openSideBar()" onclick="closeSideBar()">
+        <a class="header" href="index.html">
+            <div class="header-brand">
+                <img class="brand brand-logo" src="https://i.pinimg.com/originals/e7/a2/14/e7a214ad811bddd8f78dd4272af04112.png" alt="soundwave logo">
+                <h1 class="brand brand-name">MusiCo.</h1>
+            </div>
+        </a>
+        <a class="header" href="index.html">
+            <div class="header-listen">
+                <h2 class="listen">Listen</h2>
+            </div>
+        </a>
+        <a class="header" href="manager.html">
+            <div class="header-music-manager">
+                <h2 class="manage-songs">Manage Songs</h2>
+            </div>
+        </a>
+        <div title="Click once to open. Double-click to close. Thank you." class="header header-all" onclick="openSideBar()" ondblclick="closeSideBar()">
             <h2 class="all"> ☰ </h2>
         </div>
     </header>
