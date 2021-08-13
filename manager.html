@@ -42,24 +42,43 @@
             <p class="side-item-name"> Privacy Policy </p>
         </div>
     </section>
-    <section id="add-new">
-        <h2 id="form-title"> Add a New Song </h2>
-        <form class="form form-push" action="https://formspree.io/f/mvodvpev" method="POST">
-            <div class="form-group">
-                <label for="music-name">Name of Song or Music (This will appear when you listen to the song): </label>
-                <br>
-                <br>
-                <input name="music-name" id="music-name" type="text" maxlength="125" required>
-            </div>
-            <div class="form-group">
-                <label for="file-addition">Add your downloaded song.</label>
-                <br>
-                <br>
-                <input name="file-addition" type="file" onchange="myFunction()" accept=".mp3" required>
-            </div>
-            <button id="add-to-list" type="submit"> + Add to List</button> 
-        </form>
-    </section>
+    <div id="sorter">
+        <section id="full-song-list">
+            <button class="storage-btn listening">
+                <h3 class="song-status">Listening</h3>
+                <img src="chevron-down.svg">
+            </button>
+            <div class="content">Current Songs</div>
+            <button class="storage-btn archived">
+                <h3 class="song-status">Archived</h3>
+                <img src="chevron-down.svg">
+            </button>
+            <div class="content">Archived Songs</div>
+            <button class="storage-btn deleted">
+                <h3 class="song-status">Deleted</h3>
+                <img src="chevron-down.svg">
+            </button>
+            <div class="content">Deleted Songs</div>
+        </section>
+        <section id="add-new">
+            <form class="form form-push" action="https://formspree.io/f/mvodvpev" method="POST">
+                <h2 id="form-title"> Add a New Song </h2>
+                <div class="form-group">
+                    <label for="music-name">Name of Song or Music (This will appear when you listen to the song): </label>
+                    <br>
+                    <br>
+                    <input name="music-name" id="music-name" type="text" maxlength="125" required>
+                </div>
+                <div class="form-group">
+                    <label for="file-addition">Add your downloaded song.</label>
+                    <br>
+                    <br>
+                    <input name="file-addition" type="file" onchange="myFunction()" accept=".mp3" required>
+                </div>
+                <button id="add-to-list" type="submit"> + Add to List</button> 
+            </form>
+        </section>
+    </div>
 
     <script src="app.js"></script>
 </body>
