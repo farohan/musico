@@ -33,7 +33,7 @@ a {
 }
 
 label {
-    color: var(--tertiary-color);
+    font-weight: bold;
     font-size: 1.75rem;
 }
 
@@ -181,17 +181,84 @@ audio {
     color: var(--tertiary-color);
 }
 
+#sorter {
+    margin-top: 2.25rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#full-song-list {
+    height: 75vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.storage-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: 0.3s;
+}
+
+.content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.storage-btn:hover {
+    transform: translate(5px, -5px);
+}
+
+.song-status {
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+
+.storage-btn > img {
+    height: 30px;
+}
+
+.listening, 
+.archived,
+.deleted {
+    height: 10rem;
+    width: 100%;
+    border: none;
+}
+
+.listening {
+    background-color: rgb(7, 207, 107);
+}
+
+.archived {
+    background-color: rgb(219, 188, 12);
+}
+
+.deleted {
+    background-color: rgb(221, 74, 48);
+}
+
 #form-title {
     font-size: 3rem;
-    color: var(--tertiary-color);
-    text-align: right;
+    color: black;
+    text-align: center;
+    margin: 0;
 }
 
 .form-push {
-    border: 1px solid white;
     height: 75vh;
     min-width: 40vw;
     max-width: 50vw;
+    background-color: var(--secondary-color);
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 #music-name {
@@ -207,8 +274,8 @@ audio {
 #add-to-list {
     height: 5rem;
     width: 15rem;
-    background-color: var(--secondary-color);
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
     border: none;
     font-size: 1.5rem;
     cursor: pointer;
