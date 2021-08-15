@@ -33,7 +33,6 @@ a {
 }
 
 label {
-    font-weight: bold;
     font-size: 1.75rem;
 }
 
@@ -97,9 +96,9 @@ header {
 #sidebar {
     height: 75vh;
     width: 0;
-    float: right;
+    position: fixed;
     overflow: auto;
-    z-index: 99;
+    z-index: 50;
     background-color: var(--secondary-color);
     transition: width 0.3s;
 }
@@ -229,6 +228,7 @@ audio {
     height: 10rem;
     width: 100%;
     border: none;
+    border-radius: 7px;
 }
 
 .listening {
@@ -256,6 +256,7 @@ audio {
     max-width: 50vw;
     background-color: var(--secondary-color);
     padding: 10px 15px;
+    border-radius: 7px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -263,7 +264,7 @@ audio {
 
 #music-name {
     height: 4rem;
-    width: 50rem;
+    width: 100%;
     transition: border 0.3s;
 }
 
@@ -277,6 +278,7 @@ audio {
     background-color: var(--primary-color);
     color: var(--tertiary-color);
     border: none;
+    border-radius: 5px;
     font-size: 1.5rem;
     cursor: pointer;
     transition: 0.3s;
