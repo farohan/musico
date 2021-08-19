@@ -156,6 +156,33 @@ header {
     border: 1.5px solid transparent;
 }
 
+.random-music {
+    height: 3.75rem;
+    width: 17.5rem;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.random-music:hover {
+    transform: translate(3px, -3px);
+}
+
+#select-a-song {
+    height: 3.5rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+}
+
+#select-a-song > option {
+    font-size: 1.4rem;
+}
+
 #select-label {
     font-size: 1.5rem;
     margin-right: 0.5rem;
@@ -203,8 +230,10 @@ audio {
 
 .content {
     padding: 0 18px;
+    font-size: 1.35rem;
     max-height: 0;
-    overflow: hidden;
+    overflow: auto;
+    border-radius: 5px;
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
 }
