@@ -48,17 +48,17 @@
                 <h3 class="song-status">Listening</h3>
                 <img src="chevron-down.svg">
             </button>
-            <div class="content">Current Songs</div>
+            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus consequuntur inventore excepturi in maxime nihil blanditiis ipsum rerum non deserunt! Repellendus, error! Facere eligendi at obcaecati accusantium pariatur aut architecto, minus in temporibus eveniet necessitatibus enim repellat rem consequatur! Possimus, assumenda. Amet nesciunt illum illo accusantium facilis sint quod tempora rerum fugiat unde repellendus quidem facere et, provident adipisci repellat sunt dolorum molestias laborum nostrum quam quae, obcaecati eos vero. Esse rem recusandae aperiam soluta exercitationem, praesentium placeat quia voluptas. Natus odio, eos dignissimos amet dolore temporibus! Excepturi natus quas fugiat iure animi nulla deserunt, consequatur quasi molestiae, asperiores dolore!</div>
             <button class="storage-btn archived">
                 <h3 class="song-status">Archived</h3>
                 <img src="chevron-down.svg">
             </button>
-            <div class="content">Archived Songs</div>
+            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium debitis eos, dolorem et inventore reiciendis ab similique voluptatum commodi tenetur! Perferendis dolores dolorum repudiandae natus, soluta deleniti nemo consectetur quam? Maiores deserunt nam sed itaque debitis odit dolores, maxime adipisci at perferendis hic error, velit alias, similique minus quo iure consectetur eos id omnis? Nihil fuga deleniti omnis, modi quam ea dicta maxime aliquid excepturi fugit cum enim velit. Asperiores incidunt quis laborum, iusto, in, nesciunt facilis nulla placeat similique perspiciatis nostrum. Eum officiis similique fugit minus odio repudiandae laudantium accusamus aperiam aliquam ullam voluptatum non molestias, dolores quo eius!</div>
             <button class="storage-btn deleted">
                 <h3 class="song-status">Deleted</h3>
                 <img src="chevron-down.svg">
             </button>
-            <div class="content">Deleted Songs</div>
+            <div class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quibusdam illum molestias cupiditate, voluptatibus architecto obcaecati perferendis itaque, nisi repellendus, eveniet in velit ex corrupti eaque eius veniam doloribus nobis ipsa? Aperiam nam repellendus et quod laborum eaque incidunt tempora nisi rerum dolorem in doloremque assumenda ea, debitis labore quas facere nobis sapiente sit mollitia sunt voluptatem molestiae tempore! Hic illum incidunt ex mollitia ab debitis? Aliquam odit doloremque eos? Laboriosam laborum, quibusdam quia eos doloremque optio eius error cum quidem unde veniam vitae quos modi facere nulla voluptatum fugit omnis voluptatibus atque blanditiis reiciendis labore? Dolore officiis quasi ipsum.</div>
         </section>
         <section id="add-new">
             <form class="form form-push" action="https://formspree.io/f/mvodvpev" method="POST">
@@ -73,13 +73,14 @@
                     <label for="file-addition">Add your downloaded song (must be a .mp3 file).</label>
                     <br>
                     <br>
-                    <input name="file-addition" type="file" onchange="myFunction()" accept=".mp3" spellcheck="true" required>
+                    <input name="file-addition" type="file" id="add-file" accept=".mp3" spellcheck="true" required>
                 </div>
-                <button id="add-to-list" type="submit"> + Add to List</button> 
+                <button id="add-to-list" type="submit" onsubmit="myFunction()"> + Add to List</button> 
             </form>
         </section>
     </div>
 
     <script src="app.js"></script>
+    <script src="dev.js"></script>
 </body>
 </html>
