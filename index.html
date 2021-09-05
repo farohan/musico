@@ -14,7 +14,7 @@
         <a class="header" href="index.html">
             <div class="header-brand">
                 <img class="brand brand-logo" src="https://i.pinimg.com/originals/e7/a2/14/e7a214ad811bddd8f78dd4272af04112.png" alt="soundwave logo">
-                <h1 class="brand brand-name">MusiCo.</h1>
+                <h1 class="brand brand-name">MusiCo</h1>
             </div>
         </a>
         <a class="header" href="index.html">
@@ -44,9 +44,9 @@
     </section>
     <section class="controls">
         <div class="select select-indiv">
-            <button class="prev-song"> <img src="chevron-left.svg"> </button>
+            <button class="prev-song"> <img src="icons/chevron-left.svg"> </button>
             <span class="song-title">Current Song</span>
-            <button class="next-song"> <img src="chevron-right.svg"> </button>
+            <button class="next-song"> <img src="icons/chevron-right.svg"> </button>
         </div>
         <div class="select select-random">
             <button class="random-music">Random Selection</button>
@@ -65,11 +65,24 @@
         </div>
     </section>
     <section class="audio">
-        <audio src="vivaldi-spring.mp3" controls></audio>
-        <p class="song-name">Vivaldi - Four Seasons - Spring</p>
+        <div class="one-song" id="first">
+            <audio src="starter-kit/vivaldi-spring.mp3" controls></audio>
+            <p class="song-name">Vivaldi - Four Seasons - Spring</p>
+        </div>
+        <div class="one-song" id="second">
+            <audio src="starter-kit/vivaldi-summer.mp3" controls></audio>
+            <p class="song-name">Vivaldi - Four Seasons - Summer</p>
+        </div>
+        <div class="one-song" id="third">
+            <audio src="starter-kit/vivaldi-fall.mp3" controls></audio>
+            <p class="song-name">Vivaldi - Four Seasons - Fall</p>
+        </div>
+        <div class="one-song" id="fourth">
+            <audio src="starter-kit/vivaldi-winter.mp3" controls></audio>
+            <p class="song-name">Vivaldi - Four Seasons - Winter</p>
+        </div>
     </section>
 
     <script src="app.js"></script>
-    <script src="dev.js"></script>
 </body>
 </html>
